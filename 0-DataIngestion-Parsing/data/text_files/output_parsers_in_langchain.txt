@@ -1,0 +1,18 @@
+LangChain Output Parsers: Structured Data from Language Models
+
+Output parsers in LangChain convert unstructured language model responses into structured, usable data formats.
+The BaseOutputParser class provides the foundation for all parsing implementations with validation and error handling.
+PydanticOutputParser uses Pydantic models to define expected output schemas and automatically parse responses.
+JSONOutputParser extracts and validates JSON data from language model responses with error recovery.
+ListOutputParser converts comma-separated or numbered lists into Python list objects for further processing.
+DatetimeOutputParser extracts and normalizes date and time information from natural language responses.
+EnumOutputParser restricts outputs to predefined choices and validates that responses match expected options.
+RegexParser uses regular expressions to extract specific patterns and information from model responses.
+StructuredOutputParser combines multiple parsing strategies to handle complex, multi-field responses.
+RetryOutputParser automatically retries parsing with corrected prompts when initial parsing fails.
+OutputFixingParser attempts to repair malformed outputs by using additional language model calls.
+CommaSeparatedListOutputParser specifically handles comma-delimited lists with proper escaping and trimming.
+BooleanOutputParser converts natural language responses into boolean values with configurable true/false indicators.
+Parser chaining allows multiple parsers to be combined for complex data extraction and transformation workflows.
+Validation schemas ensure that parsed outputs meet business rules and data quality requirements.
+Custom parsers can be created by extending BaseOutputParser to handle specialized output formats and validation rules.

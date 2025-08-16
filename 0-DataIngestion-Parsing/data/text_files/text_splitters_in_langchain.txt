@@ -1,0 +1,18 @@
+LangChain Text Splitters: Intelligent Document Chunking
+
+Text splitters in LangChain break down large documents into smaller, manageable chunks for processing.
+The TextSplitter base class provides the foundation for all splitting strategies with configurable parameters.
+RecursiveCharacterTextSplitter intelligently splits text while trying to keep related content together.
+CharacterTextSplitter divides text based on specific characters like newlines or custom separators.
+TokenTextSplitter splits text based on token count to ensure chunks fit within model context limits.
+MarkdownHeaderTextSplitter preserves document structure by splitting on markdown headers and maintaining hierarchy.
+HTMLHeaderTextSplitter processes HTML documents while preserving semantic structure and tag information.
+CodeTextSplitter handles programming code with language-specific splitting that respects syntax boundaries.
+LatexTextSplitter processes LaTeX documents while maintaining mathematical expressions and document structure.
+PythonCodeTextSplitter specifically handles Python code with awareness of functions, classes, and logical blocks.
+Chunk size configuration balances context preservation with processing efficiency and model limitations.
+Chunk overlap ensures that important information spanning chunk boundaries is not lost during processing.
+Semantic splitting attempts to break text at natural boundaries like sentences or paragraphs for better coherence.
+Metadata preservation ensures that chunk-level information maintains references to source documents and locations.
+Splitting evaluation helps optimize chunk size and overlap parameters for specific use cases and document types.
+Custom splitters can be implemented to handle specialized document formats or domain-specific splitting requirements.

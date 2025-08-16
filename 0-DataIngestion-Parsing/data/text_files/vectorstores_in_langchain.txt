@@ -1,0 +1,18 @@
+LangChain Vector Stores: Scalable Similarity Search
+
+Vector stores in LangChain provide efficient storage and retrieval of high-dimensional embeddings for similarity search.
+The VectorStore base class defines the standard interface for all vector database implementations.
+Chroma is a lightweight, open-source vector database that's perfect for development and small-scale applications.
+Pinecone offers a managed vector database service with high performance and scalability for production use.
+Weaviate provides a cloud-native vector database with built-in vectorization and hybrid search capabilities.
+FAISS (Facebook AI Similarity Search) enables efficient similarity search and clustering of dense vectors.
+Qdrant is a vector similarity search engine with extended filtering support and high availability features.
+Milvus is an open-source vector database built for scalable similarity search and AI applications.
+Vector store operations include adding documents, similarity search, and maximum marginal relevance retrieval.
+Metadata filtering allows you to combine vector similarity with traditional database-style filtering.
+Index types like IVF, HNSW, and LSH offer different trade-offs between speed, accuracy, and memory usage.
+Batch operations improve performance when adding or updating large numbers of documents in vector stores.
+Vector store persistence ensures that your embeddings and metadata are saved between application sessions.
+Hybrid search combines vector similarity with keyword search for more comprehensive retrieval capabilities.
+Vector store scaling involves considerations like sharding, replication, and distributed query processing.
+Custom vector stores can be implemented to integrate with proprietary or specialized similarity search systems.

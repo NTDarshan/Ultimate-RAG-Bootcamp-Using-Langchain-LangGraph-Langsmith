@@ -1,0 +1,18 @@
+LangChain Document Loaders: Ingesting Data from Multiple Sources
+
+Document loaders in LangChain provide standardized ways to ingest data from various file formats and sources.
+The BaseLoader class defines the interface that all document loaders must implement for consistent behavior.
+TextLoader handles plain text files with configurable encoding and error handling for robust file processing.
+PDFLoader extracts text content from PDF documents while preserving structure and metadata information.
+CSVLoader processes comma-separated value files with customizable column handling and data type inference.
+JSONLoader parses JSON files and can extract specific fields or flatten nested structures as needed.
+WebBaseLoader scrapes content from web pages with support for custom selectors and content filtering.
+DirectoryLoader recursively processes multiple files in a directory with configurable file type filtering.
+UnstructuredLoader handles various document formats including Word, PowerPoint, and HTML files.
+NotionDBLoader connects to Notion databases to extract and synchronize content from collaborative workspaces.
+GitHubIssuesLoader retrieves issues and pull requests from GitHub repositories for analysis and processing.
+SlackDirectoryLoader extracts messages and conversations from Slack workspace exports.
+ConfluenceLoader connects to Atlassian Confluence to extract wiki pages and documentation.
+S3FileLoader and S3DirectoryLoader handle files stored in Amazon S3 buckets with proper authentication.
+Document metadata extraction preserves important information like creation dates, authors, and source locations.
+Custom loaders can be created by extending BaseLoader to handle proprietary formats or specialized data sources.

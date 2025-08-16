@@ -1,0 +1,18 @@
+LangChain Agents: Autonomous AI Decision Making
+
+Agents in LangChain are autonomous systems that can make decisions about which tools to use and how to use them.
+The Agent class combines a language model with a set of tools and decision-making logic to solve complex problems.
+ReAct agents use a reasoning and acting pattern to break down problems and execute solutions step by step.
+Zero-shot agents can work with tools they haven't seen before by using their descriptions and examples.
+Conversational agents maintain context across interactions while having access to tools and external resources.
+The AgentExecutor is responsible for running agents safely with proper error handling and execution limits.
+Tools are the external capabilities that agents can use, such as search engines, calculators, or API calls.
+Tool selection happens dynamically based on the agent's understanding of the current task and available options.
+Agent memory allows for persistence of information across multiple interactions and tool uses.
+Custom tools can be created by implementing the BaseTool interface with proper descriptions and input schemas.
+Agent callbacks provide visibility into the decision-making process and tool usage for debugging and monitoring.
+Multi-agent systems can be built where different agents specialize in different types of tasks or domains.
+Agent planning involves breaking down complex tasks into smaller, manageable steps that can be executed sequentially.
+Error recovery mechanisms help agents handle tool failures and unexpected situations gracefully.
+Agent evaluation frameworks help measure the performance and reliability of autonomous systems.
+Safety considerations include output filtering, tool access controls, and execution timeouts to prevent harmful actions.

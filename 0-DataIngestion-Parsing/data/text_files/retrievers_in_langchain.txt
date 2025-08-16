@@ -1,0 +1,18 @@
+LangChain Retrievers: Intelligent Information Retrieval
+
+Retrievers in LangChain are components designed to fetch relevant information from various data sources efficiently.
+The BaseRetriever class provides a standardized interface for all retrieval implementations in the framework.
+VectorStoreRetriever uses embedding-based similarity search to find relevant documents from vector databases.
+BM25Retriever implements the BM25 algorithm for keyword-based document retrieval with term frequency scoring.
+TFIDFRetriever uses Term Frequency-Inverse Document Frequency for traditional information retrieval tasks.
+SelfQueryRetriever can interpret natural language queries and convert them into structured database queries.
+MultiQueryRetriever generates multiple variations of a query to improve retrieval coverage and accuracy.
+EnsembleRetriever combines multiple retrieval methods to leverage the strengths of different approaches.
+ContextualCompressionRetriever filters and compresses retrieved documents to focus on the most relevant content.
+ParentDocumentRetriever maintains relationships between document chunks and their parent documents for better context.
+TimeWeightedVectorStoreRetriever considers both relevance and recency when ranking retrieved documents.
+MultiVectorRetriever can work with multiple vector representations of the same document for improved matching.
+Retrieval evaluation metrics help measure the quality and effectiveness of different retrieval strategies.
+Hybrid retrieval combines dense and sparse retrieval methods for optimal performance across different query types.
+Retrieval augmented generation (RAG) patterns use retrievers to provide context for language model responses.
+Custom retrievers can be implemented to work with proprietary data sources or specialized retrieval algorithms.
