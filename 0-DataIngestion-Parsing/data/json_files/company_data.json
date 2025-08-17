@@ -1,0 +1,112 @@
+{
+    "company_name": "TechNova Solutions",
+    "employees": [
+        {
+            "employee_id": 101,
+            "name": "Alice Johnson",
+            "role": "Software Engineer",
+            "skills": [
+                "Python",
+                "Django",
+                "SQL"
+            ],
+            "projects": [
+                {
+                    "project_id": "P001",
+                    "name": "Inventory System",
+                    "status": "Completed"
+                },
+                {
+                    "project_id": "P002",
+                    "name": "E-commerce Platform",
+                    "status": "Ongoing"
+                }
+            ]
+        },
+        {
+            "employee_id": 102,
+            "name": "Bob Smith",
+            "role": "Frontend Developer",
+            "skills": [
+                "React",
+                "JavaScript",
+                "CSS"
+            ],
+            "projects": [
+                {
+                    "project_id": "P003",
+                    "name": "Customer Portal",
+                    "status": "Ongoing"
+                }
+            ]
+        },
+        {
+            "employee_id": 103,
+            "name": "Charlie Davis",
+            "role": "Data Scientist",
+            "skills": [
+                "Python",
+                "Pandas",
+                "Machine Learning"
+            ],
+            "projects": [
+                {
+                    "project_id": "P004",
+                    "name": "Sales Forecasting",
+                    "status": "Completed"
+                },
+                {
+                    "project_id": "P005",
+                    "name": "AI Chatbot",
+                    "status": "Ongoing"
+                }
+            ]
+        },
+        {
+            "employee_id": 104,
+            "name": "Diana Lee",
+            "role": "UI/UX Designer",
+            "skills": [
+                "Figma",
+                "Adobe XD",
+                "Illustrator"
+            ],
+            "projects": [
+                {
+                    "project_id": "P006",
+                    "name": "Mobile App Design",
+                    "status": "Completed"
+                }
+            ]
+        },
+        {
+            "employee_id": 105,
+            "name": "Ethan Brown",
+            "role": "DevOps Engineer",
+            "skills": [
+                "AWS",
+                "Docker",
+                "Kubernetes"
+            ],
+            "projects": [
+                {
+                    "project_id": "P007",
+                    "name": "Cloud Migration",
+                    "status": "Ongoing"
+                }
+            ]
+        }
+    ],
+    "departments": {
+        "Engineering": {
+            "head": "Michael Scott",
+            "budget": 500000,
+            "team_size": 25
+        },
+        "Human Resources": {
+            "head": "Rachel Green",
+            "budget": 150000,
+            "team_size": 8
+        }
+    }
+}
