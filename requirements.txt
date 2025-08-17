@@ -26,6 +26,15 @@ wikipedia
 langgraph
 ipykernel
 pandas
+python-docx
+docx2txt
+unstructured[docx]
+unstructured[excel]
+unstructured[csv]
+pandas
+openpyxl
+msoffcrypto-tool
+
 
 
 

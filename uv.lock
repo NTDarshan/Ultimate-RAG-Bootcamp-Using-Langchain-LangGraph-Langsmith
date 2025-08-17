@@ -1656,6 +1656,19 @@ wheels = [
 ]
 
 [[package]]
+name = "msoffcrypto-tool"
+version = "5.4.2"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "cryptography" },
+    { name = "olefile" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/d2/b7/0fd6573157e0ec60c0c470e732ab3322fba4d2834fd24e1088d670522a01/msoffcrypto_tool-5.4.2.tar.gz", hash = "sha256:44b545adba0407564a0cc3d6dde6ca36b7c0fdf352b85bca51618fa1d4817370", size = 41183, upload-time = "2024-08-08T15:50:28.462Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/03/54/7f6d3d9acad083dae8c22d9ab483b657359a1bf56fee1d7af88794677707/msoffcrypto_tool-5.4.2-py3-none-any.whl", hash = "sha256:274fe2181702d1e5a107ec1b68a4c9fea997a44972ae1cc9ae0cb4f6a50fef0e", size = 48713, upload-time = "2024-08-08T15:50:27.093Z" },
+]
+
+[[package]]
 name = "multidict"
 version = "6.6.4"
 source = { registry = "https://pypi.org/simple" }
@@ -2818,6 +2831,7 @@ dependencies = [
     { name = "langchain-openai" },
     { name = "langgraph" },
     { name = "matplotlib" },
+    { name = "msoffcrypto-tool" },
     { name = "openpyxl" },
     { name = "pandas" },
     { name = "pdfminer" },
@@ -2828,7 +2842,7 @@ dependencies = [
     { name = "rank-bm25" },
     { name = "sentence-transformers" },
     { name = "tiktoken" },
-    { name = "unstructured" },
+    { name = "unstructured", extra = ["csv", "docx"] },
     { name = "wikipedia" },
 ]
 
@@ -2847,6 +2861,7 @@ requires-dist = [
     { name = "langchain-openai", specifier = ">=0.3.30" },
     { name = "langgraph", specifier = ">=0.6.5" },
     { name = "matplotlib", specifier = ">=3.10.5" },
+    { name = "msoffcrypto-tool", specifier = ">=5.4.2" },
     { name = "openpyxl", specifier = ">=3.1.5" },
     { name = "pandas", specifier = ">=2.3.1" },
     { name = "pdfminer", specifier = ">=20191125" },
@@ -2857,7 +2872,7 @@ requires-dist = [
     { name = "rank-bm25", specifier = ">=0.2.2" },
     { name = "sentence-transformers", specifier = ">=5.1.0" },
     { name = "tiktoken", specifier = ">=0.11.0" },
-    { name = "unstructured", specifier = ">=0.18.13" },
+    { name = "unstructured", extras = ["csv", "docx", "excel"], specifier = ">=0.18.13" },
     { name = "wikipedia", specifier = ">=1.4.0" },
 ]
 
@@ -3541,6 +3556,14 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/8e/87/c0995889c2ecfc2c3703f5cbe7bec86ac2b141805d0377e45d6db977ebe7/unstructured-0.18.13.tar.gz", hash = "sha256:3ca6034d8647fef5c26b39bacae3d90a5f530f520bfd80f0e964bd5e084a0d50", size = 1691004, upload-time = "2025-08-14T04:46:07.014Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/9b/af/9d9ed84dde3b033e812158a7434d2c1ad6b81b0f486b29f5321c1037c320/unstructured-0.18.13-py3-none-any.whl", hash = "sha256:cd4e3a9fe456b9e305e1e9669a444498b2b18f1f13d07a449816ff5849ddd998", size = 1778777, upload-time = "2025-08-14T04:46:04.897Z" },
+]
+
+[package.optional-dependencies]
+csv = [
+    { name = "pandas" },
+]
+docx = [
+    { name = "python-docx" },
 ]
 
 [[package]]
